@@ -1,6 +1,14 @@
 #! /bin/sh
 # from https://www.linuxquestions.org/questions/linux-networking-3/openvpn-does-not-reconnect-621097/
 
+#
+# To use this script, put it in:
+# /root/vpnkeepalive/vpnkeepalive.sh 
+# and then put the following line in your root crontab:
+# 0-59/2 * * * * /root/vpnkeepalive/vpnkeepalive.sh
+#
+
+
 #uncomment the line for debug_out you want to use
 #use /dev/stdout only when not calling from cron
 debug_out=/dev/null
